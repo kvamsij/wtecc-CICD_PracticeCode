@@ -16,8 +16,8 @@ jobs:
       
       - name: Install dependencies
         run: | 
-          sudo -H python -m pip install --upgrade pip
-          sudo -H pip3 install -r requiremets.txt
+          python3 -m pip3 install --upgrade pip3
+          pip3 install -r requiremets.txt
 
       - name: Lint with flake8
         run: |
